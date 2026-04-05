@@ -1,0 +1,600 @@
+--- START OF FILE text/html ---
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#10b981">
+    
+    <title>BAYTI SOIN - Soins Infirmiers à Domicile | Salé, Maroc</title>
+    <meta name="description" content="Services de soins infirmiers à domicile au Maroc : injections, perfusions, pose de sondes, soins du pied diabétique, suivi post-opératoire et accompagnement.">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="BAYTI SOIN - Soins Infirmiers à Domicile">
+    <meta property="og:description" content="Services de soins infirmiers professionnels à domicile au Maroc. Réactivité, discrétion et respect.">
+    <meta property="og:image" content="https://i.ibb.co/p6hmLMhY/Screenshot-20260327-001736-Google-1.png">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect fill='%2310b981' width='32' height='32' rx='6'/><text x='16' y='22' font-size='20' text-anchor='middle' fill='white' font-weight='bold'>+</text></svg>">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" as="style">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary: #10b981;
+            --secondary: #0ea5e9;
+            --accent: #67e8f9;
+            --glass: rgba(255, 255, 255, 0.15);
+            --glass-border: rgba(255, 255, 255, 0.25);
+            --shadow: 0 10px 40px rgba(16, 185, 129, 0.25);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #10b981, #0ea5e9);
+            color: white;
+            min-height: 100vh;
+            padding: 20px 15px 100px;
+            line-height: 1.6;
+        }
+
+        .glass-container {
+            max-width: 640px;
+            margin: 0 auto;
+        }
+
+        .glass-card {
+            background: var(--glass);
+            backdrop-filter: blur(22px);
+            border: 1px solid var(--glass-border);
+            border-radius: 26px;
+            padding: 28px;
+            margin-bottom: 26px;
+            box-shadow: var(--shadow);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .glass-card:hover {
+            transform: translateY(-8px);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .profile-img {
+            width: 148px;
+            height: 148px;
+            border-radius: 50%;
+            border: 5px solid rgba(255, 255, 255, 0.45);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+            margin-bottom: 16px;
+            object-fit: cover;
+            background-color: white;
+        }
+
+        h1 {
+            font-size: 2.35rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin: 0 0 20px;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            opacity: 0.95;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            opacity: 0.9;
+            margin-top: 8px;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .opacity-92 {
+            opacity: 0.92;
+        }
+
+        .leading-relaxed {
+            line-height: 1.7;
+        }
+
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+            gap: 16px;
+        }
+
+        .service-card {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 18px 12px;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover {
+            background: rgba(255, 255, 255, 0.18);
+            transform: translateY(-4px);
+        }
+
+        .service-card i {
+            font-size: 2.4rem;
+            color: var(--accent);
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .service-card p {
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        /* Team Grid */
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 18px;
+        }
+
+        .team-member {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 20px 12px;
+            transition: all 0.3s ease;
+        }
+
+        .team-member:hover {
+            transform: translateY(-6px);
+            background: rgba(255, 255, 255, 0.18);
+        }
+
+        .team-member img {
+            width: 92px;
+            height: 92px;
+            border-radius: 50%;
+            border: 3px solid rgba(255, 255, 255, 0.4);
+            margin-bottom: 12px;
+            object-fit: cover;
+        }
+
+        .team-member strong {
+            display: block;
+            font-size: 1.05rem;
+            margin-bottom: 4px;
+        }
+
+        .team-member small {
+            opacity: 0.85;
+            font-size: 0.9rem;
+        }
+
+        /* RDV Card */
+        .rdv-card {
+            background: linear-gradient(135deg, #10b981, #059669);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .rdv-card::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 40%;
+            height: 300%;
+            background: rgba(255, 255, 255, 0.25);
+            transform: rotate(25deg);
+            animation: shine 4s infinite linear;
+        }
+
+        .rdv-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .pulse {
+            animation: pulse 2s infinite;
+            display: inline-block;
+        }
+
+        .rdv-button {
+            margin-top: 20px;
+            background: rgba(255, 255, 255, 0.25);
+            display: inline-block;
+            padding: 14px 32px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        /* Contact Items */
+        .contact-item {
+            background: rgba(255, 255, 255, 0.12);
+            border-radius: 18px;
+            padding: 18px;
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            min-height: 80px;
+        }
+
+        .contact-item:hover {
+            background: rgba(255, 255, 255, 0.22);
+            transform: translateX(8px);
+        }
+
+        .contact-item i {
+            font-size: 2.3rem;
+            margin-right: 20px;
+            width: 50px;
+            flex-shrink: 0;
+        }
+
+        .contact-item-text strong {
+            display: block;
+            font-size: 1.05rem;
+            margin-bottom: 4px;
+        }
+
+        .contact-item-text small {
+            opacity: 0.85;
+            font-size: 0.9rem;
+        }
+
+        /* Social Buttons */
+        .social-section {
+            text-align: center;
+        }
+
+        .social-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 22px;
+        }
+
+        .social-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: rgba(255, 255, 255, 0.15);
+            color: white;
+            padding: 14px 24px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .social-btn:hover {
+            transform: translateY(-4px) scale(1.05);
+            background: rgba(255, 255, 255, 0.28);
+            box-shadow: 0 10px 25px rgba(16, 185, 129, 0.4);
+        }
+
+        .social-btn i {
+            font-size: 1.6rem;
+        }
+
+        /* Animations */
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        @keyframes shine {
+            0% { transform: translateX(-150%) rotate(25deg); }
+            100% { transform: translateX(400%) rotate(25deg); }
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.06); }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-45px); }
+        }
+
+        /* Floating Bubbles */
+        .bubble {
+            position: fixed;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.07);
+            z-index: -1;
+            animation: float 11s ease-in-out infinite;
+            pointer-events: none;
+        }
+
+        /* Loading Screen */
+        #loading {
+            position: fixed;
+            inset: 0;
+            background: linear-gradient(135deg, #10b981, #0ea5e9);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            transition: opacity 0.7s ease;
+        }
+
+        .spinner {
+            width: 72px;
+            height: 72px;
+            border: 7px solid rgba(255, 255, 255, 0.3);
+            border-top-color: white;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        /* Footer */
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            text-align: center;
+            padding: 16px;
+            background: var(--glass);
+            backdrop-filter: blur(20px);
+            font-size: 0.9rem;
+            z-index: 100;
+            border-top: 1px solid var(--glass-border);
+        }
+
+        /* Responsive */
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.75rem;
+            }
+
+            h2 {
+                font-size: 1.25rem;
+            }
+
+            .glass-card {
+                padding: 20px;
+                margin-bottom: 20px;
+            }
+
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .rdv-card h2 {
+                font-size: 1.4rem;
+            }
+
+            footer {
+                font-size: 0.85rem;
+                padding: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading">
+        <div class="spinner"></div>
+    </div>
+
+    <div class="glass-container">
+        <!-- Header -->
+        <header class="glass-card">
+            <img 
+                src="https://i.ibb.co/p6hmLMhY/Screenshot-20260327-001736-Google-1.png" 
+                alt="Logo BAYTI SOIN" 
+                class="profile-img"
+                width="148"
+                height="148">
+            <h1>BAYTI SOIN</h1>
+            <p class="subtitle">Votre santé entre de bonnes mains</p>
+        </header>
+
+        <!-- À propos -->
+        <div class="glass-card">
+            <h2>À propos de nous</h2>
+            <p class="text-center opacity-92 leading-relaxed">
+                Nous sommes un service de soins infirmiers à domicile au Maroc, dédié à offrir des soins médicaux professionnels, sécurisés et humains directement chez vous. Notre mission est d’assurer un accompagnement personnalisé à chaque patient, avec réactivité, discrétion et respect, que ce soit pour des soins quotidiens, post-opératoires ou l’assistance aux personnes âgées.
+            </p>
+        </div>
+
+        <!-- Services -->
+        <div class="glass-card">
+            <h2>Nos Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-stethoscope"></i>
+                    <p>Consultations Générales</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-syringe"></i>
+                    <p>Vaccins & Bilans</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-flask"></i>
+                    <p>Analyses Biologiques</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-pills"></i>
+                    <p>Pharmacie</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Notre Équipe -->
+        <div class="glass-card">
+            <h2>Notre Équipe Médicale</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img 
+                        src="https://picsum.photos/id/64/92/92" 
+                        alt="Khadija 1 - Infirmière"
+                        width="92"
+                        height="92">
+                    <strong>Khadija 1</strong>
+                    <small>Infirmière</small>
+                </div>
+                <div class="team-member">
+                    <img 
+                        src="https://picsum.photos/id/201/92/92" 
+                        alt="Khadija 2 - Infirmière"
+                        width="92"
+                        height="92">
+                    <strong>Khadija 2</strong>
+                    <small>Infirmière</small>
+                </div>
+                <div class="team-member">
+                    <img 
+                        src="https://picsum.photos/id/1009/92/92" 
+                        alt="Khadija 3 - Infirmière"
+                        width="92"
+                        height="92">
+                    <strong>Khadija 3</strong>
+                    <small>Infirmière</small>
+                </div>
+            </div>
+        </div>
+
+        <!-- Prendre RDV -->
+        <div class="glass-card rdv-card" id="rdvCard" role="button" aria-label="Cliquer pour prendre rendez-vous">
+            <div class="rdv-content">
+                <i class="fas fa-calendar-plus pulse"></i>
+                <h2>Prenez Rendez-vous Aujourd'hui</h2>
+                <p style="opacity: 0.95; font-size: 1.05rem;">Réponse en moins de 10 minutes via WhatsApp</p>
+                <div class="rdv-button">
+                    📲 Cliquez ici pour réserver
+                </div>
+            </div>
+        </div>
+
+        <!-- Nous Contacter -->
+        <div class="glass-card">
+            <h2>Nous Contacter</h2>
+            
+            <div class="contact-item" onclick="openWhatsApp()" role="button" aria-label="Contacter via WhatsApp">
+                <i class="fab fa-whatsapp" style="color: #25D366;"></i>
+                <div class="contact-item-text">
+                    <strong>WhatsApp</strong>
+                    <small>+212 604-462613 • Réponse ultra-rapide</small>
+                </div>
+            </div>
+            
+            <div class="contact-item" onclick="callClinic()" role="button" aria-label="Appeler BAYTI SOIN">
+                <i class="fas fa-phone"></i>
+                <div class="contact-item-text">
+                    <strong>Appeler BAYTI SOIN</strong>
+                    <small>+212 604-462613</small>
+                </div>
+            </div>
+        </div>
+
+        <!-- Restez connectés -->
+        <div class="glass-card social-section">
+            <h2>Restez connectés avec nous</h2>
+            <p style="margin-bottom: 22px; opacity: 0.9;">
+                Suivez notre actualité santé, recevez des conseils médicaux et ne ratez aucun événement important.
+            </p>
+            
+            <div class="social-buttons">
+                <a href="https://instagram.com/bayti.soin" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Suivez-nous sur Instagram">
+                    <i class="fab fa-instagram"></i>
+                    Instagram
+                </a>
+                <a href="https://www.facebook.com/people/Boutique-soufian/100047779931200/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Suivez-nous sur Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                    Facebook
+                </a>
+                <a href="https://www.tiktok.com/@soufian_gsm" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Suivez-nous sur TikTok">
+                    <i class="fab fa-tiktok"></i>
+                    TikTok
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        © 2025 BAYTI SOIN • Salé, Maroc • Tous droits réservés
+    </footer>
+
+    <script>
+        // Remove loading screen
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                const loading = document.getElementById('loading');
+                if (loading) {
+                    loading.style.opacity = '0';
+                    setTimeout(() => loading.remove(), 700);
+                }
+            }, 900);
+        });
+
+        // Create floating bubbles
+        function createBubbles() {
+            const bubbleCount = 7;
+            for (let i = 0; i < bubbleCount; i++) {
+                const bubble = document.createElement('div');
+                bubble.className = 'bubble';
+                const size = Math.random() * 110 + 50;
+                bubble.style.width = bubble.style.height = size + 'px';
+                bubble.style.left = Math.random() * 100 + '%';
+                bubble.style.top = Math.random() * 90 + '%';
+                bubble.style.animationDelay = '-' + Math.random() * 12 + 's';
+                document.body.appendChild(bubble);
+            }
+        }
+        createBubbles();
+
+        // WhatsApp function
+        function openWhatsApp() {
+            const msg = encodeURIComponent("Bonjour BAYTI SOIN,\nJe souhaite prendre un rendez-vous pour des soins à domicile. Merci !");
+            window.open('https://wa.me/212604462613?text=' + msg, '_blank');
+        }
+
+        // Phone call function
+        function callClinic() {
+            window.location.href = 'tel:+212604462613';
+        }
+
+        // RDV Card click handler
+        const rdvCard = document.getElementById('rdvCard');
+        if (rdvCard) {
+            rdvCard.addEventListener('click', openWhatsApp);
+            rdvCard.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    openWhatsApp();
+                }
+            });
+        }
+    </script>
+</body>
